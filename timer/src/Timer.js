@@ -53,17 +53,41 @@ export default class Timer extends Component {
         const { minutes, seconds } = this.state
         return (
            <React.Fragment>
-               <body style={{backgroundColor: "#3F2272" , margin: "0" , height: "670px" , color: "white" ,
-            textAlign: "center" , fontSize: "30px"}}>
-             <h1 style={{marginTop: "0px"}}>Timer App</h1>
-             <span ><input placeholder="Minute..." type="number"  onChange={this.handleChange}></input> <button disabled={!this.state.input} style={{fontSize: "13px"}} type="submit" onClick={this.handleSubmit}>START</button></span>
-            <div style={{textAlign: "center" , marginTop : "190px" , fontSize : "40px" , color: "white"}  }>
-            { minutes === 0 && seconds === 0
-                    ? <h1>Time Out !</h1>
-                    : <h1>Minute : {minutes} Second : {seconds < 10 ? `0${seconds}` : seconds}</h1>
-                }
+            <div>
+                <div className="vertical-center"> 
+                    <div className="container">
+                        <section id="cover">
+                            <div id="cover-caption">
+                                <div className="row text-white">
+                                    <div className="col-sm-6 offset-sm-3 text-center">
+                                        <h1 className="display-4">Timer App</h1>
+                                        <div className="info-form">
+                                            <div className="form-group">
+                                                <label className="sr-only">Name</label>
+                                                <input className="form-control text-center" placeholder="Minute..." type="number" onChange={this.handleChange} />
+                                            </div>
+                                            <button className="btn btn-success" disabled={!this.state.input} 
+                                                style={{fontSize: "13px"}} type="submit" 
+                                                onClick={this.handleSubmit}>
+                                                START
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <hr />
+                                    <h1 className="text-white">
+                                    { minutes === 0 && seconds === 0
+                                        ? <h1>Time Out !</h1>
+                                        : <h1>Minute : {minutes} Second : {seconds < 10 ? `0${seconds}` : seconds}</h1>
+                                    }
+                                    </h1>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-            </body>  
            </React.Fragment>
         )
     }

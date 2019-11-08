@@ -1,4 +1,5 @@
 import React from 'react';
+import './bootstrap.css';
 import './App.css';
 import Timer from './Timer'
 import {HashRouter as Router} from 'react-router-dom';
