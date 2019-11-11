@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/timer_react/static/css/main.f846ed99.chunk.css",
+    "main.js": "/timer_react/static/js/main.1ab58b08.chunk.js",
+    "main.js.map": "/timer_react/static/js/main.1ab58b08.chunk.js.map",
+    "runtime-main.js": "/timer_react/static/js/runtime-main.500e5b79.js",
+    "runtime-main.js.map": "/timer_react/static/js/runtime-main.500e5b79.js.map",
+    "static/js/2.6a6ea546.chunk.js": "/timer_react/static/js/2.6a6ea546.chunk.js",
+    "static/js/2.6a6ea546.chunk.js.map": "/timer_react/static/js/2.6a6ea546.chunk.js.map",
+    "index.html": "/timer_react/index.html",
+    "precache-manifest.a990e5085e22789aa2270fbda8069b28.js": "/timer_react/precache-manifest.a990e5085e22789aa2270fbda8069b28.js",
+    "service-worker.js": "/timer_react/service-worker.js",
+    "static/css/main.f846ed99.chunk.css.map": "/timer_react/static/css/main.f846ed99.chunk.css.map",
+    "static/media/scb-logo.png": "/timer_react/static/media/scb-logo.6b3059ef.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.500e5b79.js",
+    "static/js/2.6a6ea546.chunk.js",
+    "static/css/main.f846ed99.chunk.css",
+    "static/js/main.1ab58b08.chunk.js"
+  ]
+}
