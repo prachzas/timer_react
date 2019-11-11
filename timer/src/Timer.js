@@ -32,26 +32,19 @@ export default class Timer extends Component {
             const { seconds, minutes } = this.state
 
             if(minutes === 0 && seconds === 0){
-                clearTimeout(this.myInterval)
-                console.log("clearInterval แล้วนะ")
+                clearInterval(this.myInterval)
                 this.setState({
                     isRunning: false
                 })
-                console.log(this.state.isRunning)
             }
             if (seconds > 0) {
-                console.log("second > 0")
                 this.setState(({ seconds }) => ({
                     seconds: seconds - 1
                 }))
             }
             if (seconds === 0) {
-                console.log("second == 0")
                 if (minutes === 0) {
-                    console.log("minutes == 0")
-                    clearInterval(this.myInterval)
                 } else {
-                    console.log("minutes != 0")
                     this.setState(({ minutes }) => ({
                         minutes: minutes - 1,
                         seconds: 59
@@ -75,7 +68,6 @@ export default class Timer extends Component {
                                     <div class="corner-ribbon top-right sticky blue">Digital Academy</div>
                                     <img className="logo" src= {logoScb} alt = "scb logo"  />
                                         {/* <h1 className="display-4">Timer App</h1> */}
-                                        <br></br>
                                         <br></br>
                                         <br></br>
                                         <div className="info-form">
