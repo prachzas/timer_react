@@ -65,7 +65,7 @@ export default class Timer extends Component {
                             <div id="cover-caption">
                                 <div className="row text-white">
                                     <div className="col-sm-6 offset-sm-3 text-center">
-                                    <div class="corner-ribbon top-right sticky blue">Digital Academy</div>
+                                    <div className="corner-ribbon top-right sticky blue">Digital Academy</div>
                                     <img className="logo" src= {logoScb} alt = "scb logo"  />
                                         {/* <h1 className="display-4">Timer App</h1> */}
                                         <br></br>
