@@ -1,5 +1,6 @@
 body {
-    background-color: #3F2272;
+    /* background-color: #3F2272; */
+    background: linear-gradient(to right, #3F2272 , rgba(157, 32, 189, 0.719));
     color: "white";
     text-align: "center";
 }
@@ -21,3 +22,55 @@ body {
     display: flex;
     align-items: center;
 }
+.logo{
+    border-radius: 120px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px; 
+    width: 220px;
+    height: 220px; 
+}
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The ribbons */
+  
+  .corner-ribbon{
+    width: 200px;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    font-size: 13px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  /* Custom styles */
+  
+  .corner-ribbon.sticky{
+    position: fixed;
+  }
+  
+  .corner-ribbon.shadow{
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+  }
+  
+  /* Different positions */
+  
+  .corner-ribbon.top-right{
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  /* Colors */
+  .corner-ribbon.blue{background:#3F2272;}
+  
+  
